@@ -26,3 +26,14 @@ const prova = {
     ]
 };
 
+
+const { questoes, aluno } = prova;
+let counter = 0;
+
+
+questoes.forEach(object => {
+    if (object.resposta === object.correta) counter++;
+})
+
+console.log(`O aluno(a) ${aluno} acertou ${counter} questões e obteve nota ${counter * 2}.`)
+
